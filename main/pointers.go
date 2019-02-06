@@ -7,10 +7,6 @@ func main() {
 	x := 0
 	changeVal(x)
 	fmt.Println("x =",x)
-	// If we pass a reference to the variable we can change the value
-	// in a function
-	changeVal(&x)
-	fmt.Println("x =",x)
 	// Get the address x points to with &
 	fmt.Println("Memory Address for x =", &x)
 	// We can also generate a pointer with new
@@ -26,5 +22,5 @@ func changeXValNow(x *int){
 	// Change the value at the memory address referenced by the pointer
 	// * gives us access to the value the pointer points at
 	*x = 2 // Store 2 in the memory address x refers to
-	}
 }
+

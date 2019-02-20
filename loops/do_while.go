@@ -1,5 +1,10 @@
-package main
+/**
+* This is an example of a do-while/while-do.
+* Replaces the while statement with a for statement.
+*/
 
+
+package main
 import "fmt"
 
 func main() {

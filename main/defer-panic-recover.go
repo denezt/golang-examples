@@ -1,5 +1,6 @@
 package main
 import "fmt"
+
 func main() {
 	// Defer executes a function after the inclosing function finishes
 	// Defer can be used to keep functions together in a logical way
@@ -27,17 +28,17 @@ func printTwo(){ fmt.Println(2)}
 // If an error occurs we can catch the error with recover and allow
 // code to continue to execute
 func Div(num1, num2 int) int {
-defer func() {
-fmt.Println(recover())
-}()
-solution := num1 / num2
-return solution
+	defer func() {
+		fmt.Println(recover())
+	}()
+	solution := num1 / num2
+	return solution
 }
 // Demonstrate how to call panic and handle it with recover
 func demPanic(){
-defer func() {
-// If I didn't print the message nothing would show
-fmt.Println(recover())
-}()
-panic("PANIC")
+	defer func() {
+	// If I didn't print the message nothing would show
+	fmt.Println(recover())
+	}()
+	panic("PANIC")
 }

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"fmt";
 	"./test"
-)
+);
 
 func main() {
 	// Create an object of type Dog from the animals package.

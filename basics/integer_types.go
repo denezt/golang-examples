@@ -52,5 +52,6 @@ func main(){
 	fmt.Printf("%T\n", y)
 
 	// Checking data type when it is not specified
-	var 
+	var myvar = 0.0
+	fmt.Printf("%T\n", myvar)
 }
